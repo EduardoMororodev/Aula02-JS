@@ -77,3 +77,65 @@ if(false){
 }else{
     console.log("Falso")
 }
+
+// if/ if else / else - encadeado
+
+let nota = 7;
+if(nota >= 8){
+    console.log("Aprovado com sucesso")
+} 
+else if(nota >= 6){
+    console.log("Ficou de exame")
+}
+else{
+    console.log("Reprovado")
+}
+
+// SWITCH CASE
+
+let diaSemana = 3;
+switch(diaSemana){
+    case 1:
+        console.log("Segunda-feira")
+        break;
+    case 2:
+        console.log("Terça-feira")
+        break;
+    case 3:
+        console.log("Quarta-feira")
+        break;
+    default:
+        console.log("Outro dia")
+}
+
+// TERNARIO
+
+let notaUsuario = (nota >= 6)? "Aprovado": "Reprovado";
+console.log(notaUsuario)
+
+let idade1 = 18;
+let podePilotar = idade1 >= 18? "Pode pilotar": "Não pode pilotar";
+
+
+// TERNARIO ENCADEADO OU ANINHADO
+let resultado = 10;
+
+let jogador = resultado < 10 ? "Jogo Bom":
+              resultado > 20 && resultado <99? "Jogo Médio":
+              resultado >= 100 ? "Jogo Alto": "Extraordinário";
+console.log(jogador)
+
+let nome1 = prompt("Qual seu nome?")
+
+let mensagem1 = nome1 ? `Ola, dev ${nome1}` : "Voce não digitou";
+
+console.log(mensagem1)
+
+// ESTRUTURA DE REPETIÇÃO
+
+// FOR
+
+    //declaração    operação       incremento
+for(let numero = 0; numero <= 10; numero ++){
+    console.log(`Contagemm de números ${numero}`)
+}
